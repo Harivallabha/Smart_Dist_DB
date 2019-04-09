@@ -1,0 +1,51 @@
+create table Stock(stk_id varchar(50) primary key,stk_itemcost int,stk_sellingprice int);
+
+create table Movie_Sell(movs_id varchar(50),movs_regs_siteid varchar(50),movs_type varchar(50),movs_name varchar(50),movs_releasedate date,movs_productionhouse varchar(50),movs_actor1 varchar(50),movs_actor2 varchar(50),movs_actor3 varchar(50),primary key(movs_id,movs_regs_siteid));
+
+create table Grade(grd_id varchar(50) primary key,grd_desc varchar(50),grd_salary int);
+
+create table Book_item(bkitm_id varchar(50) primary key);
+
+create table sell_transaction(selltxn_id varchar(50),selltxn_site_id varchar(50),selltxn_date date,buyer_name varchar(50),sell_paytype varchar(50),primary key(selltxn_id,selltxn_site_id));
+
+create table sell_item(sellitm_id varchar(50) primary key);
+
+create table rent_item(rentitm_id varchar(50),rentitm_site_id varchar(50),primary key(rentitm_id,rentitm_site_id));
+
+create table movie_rent(movr_id varchar(50),movr_reg_siteid varchar(50),movr_type varchar(50),movr_name varchar(50),movr_releasedate date,movr_productionhouse varchar(50),movr_actor1 varchar(50),movr_actor2 varchar(50),movr_actor3 varchar(50),movr_locatedsite varchar(50),primary key(movr_id,movr_reg_siteid)); 
+
+create table employee (emp_siteid varchar(30),emp_id varchar(30),emp_name varchar(30),emp_surname varchar(30),emp_idno varchar(30),emp_address varchar(30),emp_telno int,emp_status varchar(30),grd_id varchar(30),emp_empstatus varchar(30),emp_workingsite varchar(30),
+emp_empdate date,emp_password varchar(30));
+
+
+
+
+create table site (site_id varchar(30),site_telno int,site_faxno int,site_manager_id varchar(30),site_local varchar(30));
+
+
+
+
+create table book_movie(bkmov_id varchar(30),bkmov_siteid varchar(30),custid varchar(30),cust_siteid varchar(30),emp_id varchar(30),emp_siteid varchar(30),booking_date date, from_site_id varchar(30));
+
+
+
+
+
+create table customer (cust_id varchar(30),cust_siteid varchar(30),cust_name varchar(30),cust_surname varchar(30),cust_dob date,cust_idno varchar(30),cust_address varchar(30),cust_telno int,cust_cellno int,cust_email varchar(30));
+
+
+
+
+
+create table rent_transaction (renttxn_id varchar(30),renttxn_site_id varchar(30),rent_date date,rent_returndate date,cust_id varchar(30),cust_siteid varchar(30),emp_id varchar(30),emp_siteid varchar(30));
+
+
+
+
+
+create table mov_rentcost (cst_id varchar(30),movr_type varchar(30),cost int,rent_period int);
+
+
+
+
+
