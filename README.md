@@ -3,7 +3,7 @@ Design and Implementation of a Smart Distributed Database for a Small Multi-Outl
 (Project for the Database Management Systems course @ BITS Pilani - Hyderabad)
 
 ### Brief Outline
-**Proposal**: We propose to design and implement a distributed database for a small multi-outlet business: a DVD and Movie rental-and-sales service. We plan to recreate Joseph Grech’s thesis [1] with the following inclusions:  A front-end user interface, decentralized cloud deployment and a personalized recommender system. 
+**Proposal**: We propose to design and implement a distributed database for a small multi-outlet business: a DVD and Movie rental-and-sales service. We plan to recreate Joseph Grech’s thesis with the following inclusions:  A front-end user interface, decentralized cloud deployment and a personalized recommender system. 
 
 (As an ambitious goal, or extension of the project beyond the submission date we intend to implement a parallel DBMS architecture for the same and carry out a performance comparison between the decentralized (distributed), parallel and the centralized cloud (distributed processing) solution.)
 
