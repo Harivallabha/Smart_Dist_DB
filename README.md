@@ -7,7 +7,9 @@ Design and Implementation of a Smart Distributed Database for a Small Multi-Outl
 
 (As an ambitious goal, or extension of the project beyond the submission date (28.04.19) we intend to implement a parallel DBMS architecture for the same and carry out a performance comparison between the decentralized (distributed), parallel and the centralized cloud (distributed processing) solution.)
 
-Point to note: Distributed (decentralized) database management is distinct from distributed processing. A distributed processing solution usually makes use of a centralized repository/parent database.
+Points to note: 
+1. Distributed (decentralized) database management is distinct from distributed processing. A distributed processing solution usually makes use of a centralized repository/parent database. 
+2. "Decentralized Cloud Deployment" - The data is centralized, but the database is replicated on different virtual machines. Hence, decentralized.
 
 **Motivation**: DVD and Movie rental outlets often store transaction information (handwritten) physically in books. A database distributed across the outlets in various locations would expedite the daily business process, and make data available for business analytics. Moreover, a distributed database offers performance improvements for query processing and doesn’t have a single point of failure.
 
