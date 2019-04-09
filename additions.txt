@@ -1,0 +1,29 @@
+SITE:
+
+alter table site add primary key(site_id);
+
+STOCK:
+
+alter table stock add stk_site_id varchar(50);
+
+EMPLOYEE: 
+
+alter table employee add primary key(emp_siteid,emp_id);
+
+MOVIE_SELL:
+
+alter table movie_sell add stk_id varchar(50);
+
+alter table movie_sell rename column movs_regs_siteid TO movs_reg_siteid;
+
+SELL_ITEM:
+
+alter table sell_item add (selltxn_id varchar(50),selltxn_site_id varchar(50),movs_id varchar(50),movs_reg_siteid varchar(50));
+
+SELL_TRANSACTION:
+
+alter table sell_transaction add (emp_id varchar(50),emp_siteid varchar(50));
+
+RENT_ITEM:
+
+alter table rent_item add(renttxn_id varchar(50),renttxn_site_id varchar(50),movr_id varchar(50),movr_reg_Siteid varchar(50));
