@@ -20,7 +20,7 @@ In particular, we note that the distributed solution must maintain referential i
 A limitation of the project is that the data is populated artificially and serves as a proof of concept without actual real-world deployment.
 We utilize this data in conjunction with the MovieLens Dataset for the purpose of generating predictive ratings for personalized recommendations, using machine learning with python.
 
-**Technology**: We intend to use Oracle Streams, Standard One Edition for the distributed database solution, the python Flask microframework for the front-end, and Oracle Bare Metal Cloud Service for cloud deployment and performance comparison. Querying would be done with the help of SQL procedures.
+**Technology**: We intend to use Oracle Streams, Standard One Edition for the distributed database solution, the python Flask microframework for the front-end, and Google Cloud for cloud deployment and performance comparison. Querying would be done with the help of SQL procedures.
 
 **References** 
 Joseph Grech. (2009). *Designing and Implementing a Distributed Database for a Small Multi-Outlet Business*. Master's thesis, Regis University.
