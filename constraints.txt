@@ -1,0 +1,15 @@
+alter table stock add constraint stock_site foreign key (stk_site_id) references site(site_id);
+
+alter table employee add constraint employee_grade foreign key (grd_id) references grade(grd_id);
+
+alter table employee add constraint employee_site foreign key (emp_siteid) references site(site_id);
+
+alter table movie_sell add constraint movie_sell_stock foreign key (stk_id) references stock(stk_id);
+
+alter table sell_item add constraint sell_item_movie_sell foreign key(movs_id,movs_reg_siteid) references movie_sell(movs_id,movs_reg_siteid);
+
+alter table sell_item add constraint sell_item_sell_transaction foreign key(selltxn_id,selltxn_site_id) references sell_transaction(selltxn_id,selltxn_site_id);
+
+alter table sell_transaction add constraint sell_transaction_employee foreign key(selltxn_id,selltxn_site_id) references employee(emp_id,emp_siteid);
+
+alter table rent_item add constr
