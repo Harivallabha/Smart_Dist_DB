@@ -13,3 +13,8 @@ alter table sell_item add constraint sell_item_sell_transaction foreign key(sell
 alter table sell_transaction add constraint sell_transaction_employee foreign key(selltxn_id,selltxn_site_id) references employee(emp_id,emp_siteid);
 
 alter table rent_item add constr
+
+
+//Comments
+
+//Does stock reference site or site reference stock --> Depends on how we define the relationship.
